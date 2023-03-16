@@ -1,0 +1,125 @@
+{
+	"type": "origins:multiple",
+	"jumpy_jumps": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:apply_effect",
+				"effects": [
+				{
+					"effect": "minecraft:levitation",
+					"amplifier": 1,
+					"duration": 7,
+					"show_icon": false,
+					"show_particles": false
+				},
+				{
+					"effect": "minecraft:slow_falling",
+					"amplifier": 1,
+					"duration": 20,
+					"show_icon": false,
+					"show_particles": false
+				}
+				]
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "pokecraft:swirlix/floatyjumps_resource",
+				"change": -1
+			},
+			{
+				"type": "origins:chance",
+				"action": {
+					"type": "origins:spawn_particles",
+					"particle": "minecraft:white_ash",
+					"count": 5,
+					"speed": 0.3,
+					"offset_y": 0.7,
+					"spread": {
+						"x": 0.5,
+						"y": 0,
+						"z": 0.5
+					}
+				},
+				"chance": 0.5
+			}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "pokecraft:swirlix/floatyjumps_resource",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:on_block",
+				"inverted": true
+			},
+			{
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": ">",
+				"compare_to": 0,
+				"inverted": true
+			},
+			{
+				"type": "origins:power_active",
+				"power": "pokecraft:swirlix/floatyjumps_toggle"
+			}
+			]
+		},
+		"key": {
+			"key": "key.jump",
+			"continuous": true
+		},
+		"cooldown": 6
+	},
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 20,
+		"start_value": 20,
+		"hud_render": {
+			"should_render": false,
+			"bar_index": 1
+		}
+	},
+	"uppity": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "pokecraft:swirlix/floatyjumps_resource",
+			"change": 1
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:status_effect",
+				"effect": "minecraft:slow_falling",
+				"inverted": true
+			},
+			{
+				"type": "origins:food_level",
+				"comparison": ">",
+				"compare_to": 6
+			}
+			]
+		}
+	},
+	"toggle": {
+		"type": "origins:toggle",
+		"active_by_default": true,
+		"key": {
+			"key": "key.origins.secondary_active"
+		}
+	},
+	"name": "Cotton Candy Body",
+	"description": "Your light fluffy body is able to move faster and periodically float around."
+}

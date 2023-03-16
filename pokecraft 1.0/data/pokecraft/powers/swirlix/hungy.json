@@ -1,0 +1,11 @@
+{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "name": "hungry bastard",
+        "operation": "multiply_base",
+        "value": 0.8
+    },
+	"hidden": true,
+	"name": "hungy",
+	"description": "hungy fast"
+}

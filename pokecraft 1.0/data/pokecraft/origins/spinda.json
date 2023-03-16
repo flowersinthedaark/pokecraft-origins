@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"pokecraft:spinda/urownvibes",
+		"pokecraft:spinda/bop",
+		"pokecraft:spinda/wobbly",
+		"pokecraft:spinda/wobblechanges",
+		"pokecraft:spinda/wobbleparticles",
+		"pokecraft:spinda/lilfella"
+	],
+	"icon": "minecraft:chiseled_quartz_block",
+	"order": 2,
+	"impact": 1,
+	"name": "Spinda",
+	"description": "Spinda, the spot panda Pokemon. All the Spinda that exist in the world are said to have utterly unique spot patterns. The shaky, tottering steps of this Pokémon give it the appearance of dancing."
+}
