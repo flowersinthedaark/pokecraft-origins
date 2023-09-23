@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.3
+    },
+	"name": "Webbed Feet",
+	"description": "You are ever so slightly faster in water."
+}

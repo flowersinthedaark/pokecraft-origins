@@ -1,0 +1,563 @@
+{
+	"type": "origins:action_over_time",
+	"rising_action": {
+		"type": "origins:choice",
+		"actions": [
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:speed",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:slowness",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:haste",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:mining_fatigue",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:strength",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:instant_health",
+					"duration": 10,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:instant_damage",
+					"duration": 10,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:jump_boost",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:nausea",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:regeneration",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:resistance",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:fire_resistance",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:water_breathing",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:invisibility",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:blindness",
+					"duration": 60,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:night_vision",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:hunger",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:weakness",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:poison",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:wither",
+					"duration": 80,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:health_boost",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:absorption",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:saturation",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:glowing",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:levitation",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:luck",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:unluck",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:slow_falling",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:conduit_power",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:bad_omen",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:hero_of_the_village",
+					"duration": 200,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:darkness",
+					"duration": 100,
+					"amplifier": 0,
+					"show_particles": false,
+					"show_icon": true
+				}
+			},
+			"weight": 2
+		}
+		]
+	},
+	"condition":{
+		"type": "origins:or",
+		"conditions": [
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:speed"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:slowness"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:haste"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:mining_fatigue"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:strength"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:instant_health"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:instant_damage"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:jump_boost"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:nausea"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:regeneration"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:resistance"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:fire_resistance"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:water_breathing"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:invisibility"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:blindness"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:night_vision"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:hunger"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:weakness"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:poison"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:wither"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:health_boost"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:absorption"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:saturation"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:glowing"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:levitation"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:luck"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:unluck"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:slow_falling"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:conduit_power"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:dolphins_grace"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:bad_omen"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:hero_of_the_village"
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:darkness"
+		}
+		]
+	},
+	"name": "Moody",
+	"description": "You will receive a brief random status effect every time you gain an effect."
+}

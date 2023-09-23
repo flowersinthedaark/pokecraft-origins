@@ -1,0 +1,150 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:modify_inventory",
+			"slots": [
+				"weapon.mainhand",
+				"weapon.offhand"
+			],
+			"process_mode": "items",
+			"limit": 5,
+			"item_action": {
+				"type": "origins:modify",
+				"modifier": "pokecraft:magsmelt"
+			}
+		},
+		{
+			"type": "origins:spawn_particles",
+			"particle": "minecraft:flame",
+			"count": 3,
+			"speed": 0.1
+		},
+		{
+			"type": "origins:play_sound",
+			"sound": "minecraft:block.furnace.fire_crackle"
+		}
+		]
+	},
+	"cooldown": 200,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 15
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+		{
+			"type": "origins:or",
+			"conditions": [
+			{
+				"type": "origins:and",
+				"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:amount",
+						"comparison": "<=",
+						"compare_to": 4
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:smeltable"
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:amount",
+						"comparison": "<=",
+						"compare_to": 4
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:smeltable"
+					}
+				}
+				]
+			},
+			{
+				"type": "origins:and",
+				"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:amount",
+						"comparison": "<=",
+						"compare_to": 4
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:smeltable"
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:smeltable",
+						"inverted": true
+					}
+				}
+				]
+			},
+			{
+				"type": "origins:and",
+				"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:amount",
+						"comparison": "<=",
+						"compare_to": 4
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:smeltable"
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:smeltable",
+						"inverted": true
+					}
+				}
+				]
+			}
+			]
+		},
+		{
+			"type": "origins:on_fire"
+		}
+		]
+	},
+	"name": "Smelt",
+	"description": "You can cook or smelt about four items in your hand at a time using the heat of fire."
+}

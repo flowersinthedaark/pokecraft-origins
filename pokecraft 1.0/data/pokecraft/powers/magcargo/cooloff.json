@@ -1,0 +1,407 @@
+{
+	"type": "origins:multiple",
+	"extracool": {
+		"type": "origins:damage_over_time",
+		"interval": 20,
+		"onset_delay": 5,
+		"damage": 1,
+		"damage_type": "minecraft:freeze",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow_block"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:powder_snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:packed_ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:blue_ice"
+					}
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:exposed_to_sky"
+					},
+					{
+						"type": "origins:predicate",
+						"predicate": "pokecraft:weather/is_rainy"
+					},
+					{
+						"type": "origins:biome",
+						"condition": {
+							"type": "origins:precipitation",
+							"precipitation": "snow"
+						}
+					}
+					]
+				}
+				]
+			},
+			{
+				"type": "origins:block_in_radius",
+				"radius": 3,
+				"shape": "cube",
+				"comparison": ">=",
+				"compare_to": 1,
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "pokecraft:magcargowarmthings"
+				},
+				"inverted": true
+			},
+			{
+				"type": "origins:on_fire",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"actualcool": {
+		"type": "origins:freeze",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow_block"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:powder_snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:packed_ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:blue_ice"
+					}
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:exposed_to_sky"
+					},
+					{
+						"type": "origins:predicate",
+						"predicate": "pokecraft:weather/is_rainy"
+					},
+					{
+						"type": "origins:biome",
+						"condition": {
+							"type": "origins:precipitation",
+							"precipitation": "snow"
+						}
+					}
+					]
+				}
+				]
+			},
+			{
+				"type": "origins:block_in_radius",
+				"radius": 3,
+				"shape": "cube",
+				"comparison": ">=",
+				"compare_to": 1,
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "pokecraft:magcargowarmthings"
+				},
+				"inverted": true
+			},
+			{
+				"type": "origins:on_fire",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"shakeyshake": {
+		"type": "origins:shaking",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow_block"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:powder_snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:packed_ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:blue_ice"
+					}
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:exposed_to_sky"
+					},
+					{
+						"type": "origins:predicate",
+						"predicate": "pokecraft:weather/is_rainy"
+					},
+					{
+						"type": "origins:biome",
+						"condition": {
+							"type": "origins:precipitation",
+							"precipitation": "snow"
+						}
+					}
+					]
+				}
+				]
+			},
+			{
+				"type": "origins:block_in_radius",
+				"radius": 3,
+				"shape": "cube",
+				"comparison": ">=",
+				"compare_to": 1,
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "pokecraft:magcargowarmthings"
+				},
+				"inverted": true
+			},
+			{
+				"type": "origins:on_fire",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"freezier": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"name": "extra frozen ow",
+			"operation": "multiply_base",
+			"value": 1
+		},
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "freeze"
+		}
+	},
+	
+	"slowmine": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+			"name": "cooled hands",
+            "operation": "multiply_base",
+            "value": -0.7
+        },
+        "condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+				{
+					"type": "origins:biome",
+					"condition": {
+						"type": "origins:temperature",
+						"comparison": "<=",
+						"compare_to": 0
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:snow_block"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:powder_snow"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:packed_ice"
+					}
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:blue_ice"
+					}
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:exposed_to_sky"
+					},
+					{
+						"type": "origins:predicate",
+						"predicate": "bugs-phantom:weather/is_rainy"
+					},
+					{
+						"type": "origins:biome",
+						"condition": {
+							"type": "origins:precipitation",
+							"precipitation": "snow"
+						}
+					}
+					]
+				}
+				]
+			},
+			{
+				"type": "origins:block_in_radius",
+				"radius": 3,
+				"shape": "cube",
+				"comparison": ">=",
+				"compare_to": 1,
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "pokecraft:magcargowarmthings"
+				},
+				"inverted": true
+			},
+			{
+				"type": "origins:on_fire",
+				"inverted": true
+			}
+			]
+		},
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:mineable/pickaxe",
+			"inverted": true
+		}
+    },
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": "You move faster in hot areas such as deserts or the nether, but slower in cold conditions"
+		}
+	],
+	"name": "Snail's Pace",
+	"description": "You move slower than normal."
+}

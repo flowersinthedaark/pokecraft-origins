@@ -1,0 +1,37 @@
+{
+	"type": "origins:multiple",
+	"wswimaa": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "additionalentityattributes:water_speed",
+			"name": "Additional swim speed",
+			"value": -0.5,
+			"operation": "multiply_base"
+		}
+	},
+	"rainaslow": {
+        "type": "origins:modify_attribute",
+        "attribute": "minecraft:generic.movement_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.17
+		},
+		"condition": {
+			"type": "origins:in_rain"
+		}
+    },
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": "This will not happen if you are on fire or very close to certain heat sources."
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "You will take extra damage from freezing though"
+		}
+	],
+	"name": "Hardening",
+	"description": "Entering too cold of a biome or coming in contact with cold blocks will cause your lava to begin to harden, which can result in death, and rain and water will drastically slow you."
+}
