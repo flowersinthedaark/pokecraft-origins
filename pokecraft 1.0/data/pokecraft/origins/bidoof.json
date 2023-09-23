@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"pokecraft:bidoof/woodbreakin",
+		"pokecraft:bidoof/woodgrip",
+		"pokecraft:bidoof/sillygoofymood",
+		"pokecraft:bidoof/woodbed",
+		"pokecraft:bidoof/slightswim",
+		"pokecraft:bidoof/nearwood"
+	],
+	"icon": "minecraft:oak_planks",
+	"order": 2,
+	"impact": 1,
+	"name": "Bidoof",
+	"description": "Bidoof, the plump mouse Pokémon. It lives in groups by the water. It chews up boulders and trees around its nest with its incisors."
+}
