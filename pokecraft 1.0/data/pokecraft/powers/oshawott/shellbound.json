@@ -49,6 +49,22 @@
 						"type": "origins:change_resource",
 						"resource": "pokecraft:oshawott/shellbound_shellbound",
 						"change": 1
+					},
+					{
+						"type": "origins:spawn_particles",
+						"particle": "minecraft:bubble_pop",
+						"count": 5,
+						"speed": 0.1
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.anvil.land",
+						"pitch": 1.7,
+						"volume": 0.18
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.bubble_column.whirlpool_inside"
 					}
 					]
 				},
@@ -69,6 +85,15 @@
 							"comparison": "==",
 							"compare_to": 1
 						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:nbt",
+							"nbt": "{scalchop: 1b}"
+						},
+						"inverted": true
 					}
 					]
 				}
@@ -97,6 +122,27 @@
 							"type": "origins:consume",
 							"amount": 1
 						}
+					},
+					{
+						"type": "origins:spawn_particles",
+						"particle": "minecraft:bubble_pop",
+						"count": 5,
+						"speed": 0.1
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.anvil.land",
+						"pitch": 1.7,
+						"volume": 0.18
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.bubble_column.whirlpool_inside"
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.item.break",
+						"pitch": 1.7
 					}
 					]
 				},
@@ -136,6 +182,13 @@
 			"key": "key.saveToolbarActivator"
 		}
 	},
+	"badges": [
+	{
+		"type": "origins:keybind",
+		"sprite": "origins:textures/gui/badge/active.png",
+		"text": "Bind and unbind with %s, but note unbinding an item will delete it."
+	}
+	],
 	"name": "§b§nScalchop",
-	"description": "Choose for yourself an object to bind as your §bScalchop§f. You will never lose it upon death, and it will be stronger, but all other forms of damage you deal will be weaker. If you want to unbind the item, hold a nautilus shell in your offhand."
+	"description": "Choose for yourself a weapon to bind as your §bScalchop§r. You will never lose it upon death, and it will be stronger, but all other forms of damage you deal will be weaker. If you want to unbind the item, hold a nautilus shell in your offhand."
 }
