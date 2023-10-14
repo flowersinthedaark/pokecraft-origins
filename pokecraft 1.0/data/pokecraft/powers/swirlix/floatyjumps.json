@@ -120,6 +120,18 @@
 			"key": "key.origins.secondary_active"
 		}
 	},
+	"badges": [
+	{
+		"type": "origins:keybind",
+		"sprite": "origins:textures/gui/badge/active.png",
+		"text": "Float upward with %s"
+	},
+	{
+		"type": "origins:keybind",
+		"sprite": "origins:textures/gui/badge/toggle.png",
+		"text": "Toggle your floating on and off with your secondary"
+	}
+	],
 	"name": "Cotton Candy Body",
 	"description": "Your light fluffy body is able to move faster and periodically float around."
 }
