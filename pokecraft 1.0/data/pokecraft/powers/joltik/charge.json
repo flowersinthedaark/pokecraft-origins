@@ -90,7 +90,7 @@
 			{
 				"type": "origins:change_resource",
 				"resource": "pokecraft:joltik/charge_chargebar",
-				"change": 10
+				"change": 15
 			},
 			{
 				"type": "origins:spawn_particles",
