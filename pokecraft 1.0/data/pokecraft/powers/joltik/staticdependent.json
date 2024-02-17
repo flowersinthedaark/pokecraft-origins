@@ -94,11 +94,11 @@
 		}
 	},
 	"health8": {
-		"type": "origins:modify_attribute",
-		"attribute": "minecraft:generic.max_health",
+		"type": "origins:attribute",
 		"modifier": {
 			"name": "thematic convenience",
-			"value": -4.0,
+			"attribute": "minecraft:generic.max_health",
+			"value": -4,
 			"operation": "addition"
 		}
 	},
