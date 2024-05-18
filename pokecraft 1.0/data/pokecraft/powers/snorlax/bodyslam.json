@@ -1,0 +1,135 @@
+{
+	"type": "origins:action_on_land",
+	"entity_action": {
+		"type": "origins:area_of_effect",
+		"radius": 1.5,
+		"shape": "cube",
+		"bientity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+				{
+					"action": {
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:damage",
+									"damage_type": "minecraft:fly_into_wall",
+									"amount": 2
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.slime.squish",
+									"category": "players",
+									"pitch": 0.5
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.magma_cube.squish",
+									"category": "players",
+									"pitch": 0.67
+								}
+							]
+						}
+					},
+					"condition": {
+						"type": "origins:actor_condition",
+						"condition": {
+							"type": "origins:food_level",
+							"comparison": "<=",
+							"compare_to": 6
+						}
+					}
+				},
+				{
+					"action": {
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:damage",
+									"damage_type": "minecraft:fly_into_wall",
+									"amount": 4
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.slime.squish",
+									"category": "players",
+									"pitch": 0.5
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.magma_cube.squish",
+									"category": "players",
+									"pitch": 0.67
+								}
+							]
+						}
+					},
+					"condition": {
+						"type": "origins:actor_condition",
+						"condition": {
+							"type": "origins:and",
+							"conditions": [
+								{
+									"type": "origins:food_level",
+									"comparison": ">",
+									"compare_to": 6
+								},
+								{
+									"type": "origins:food_level",
+									"comparison": "<=",
+									"compare_to": 16
+								}
+							]
+						}
+					}
+				},
+				{
+					"action": {
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:damage",
+									"damage_type": "minecraft:fly_into_wall",
+									"amount": 6
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.slime.squish",
+									"category": "players",
+									"pitch": 0.5
+								},
+								{
+									"type": "origins:play_sound",
+									"sound": "minecraft:entity.magma_cube.squish",
+									"category": "players",
+									"pitch": 0.67
+								}
+							]
+						}
+					},
+					"condition": {
+						"type": "origins:actor_condition",
+						"condition": {
+							"type": "origins:food_level",
+							"comparison": ">",
+							"compare_to": 16
+						}
+					}
+				}
+			]
+		}
+	},
+	"condition": {
+		"type": "origins:fall_distance",
+		"comparison": ">=",
+		"compare_to": 5
+	},
+	"name": "Body Slam",
+	"description": "Throw your weight around. Falling from 5 or more blocks will damage anyone you land on, and the damage will slightly increase or decrease depending on how well-fed you currently are."
+}
