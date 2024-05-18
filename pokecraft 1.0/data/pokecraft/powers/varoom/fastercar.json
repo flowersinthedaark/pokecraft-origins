@@ -1,0 +1,11 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "name": "if u got this reference good for u",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.2
+    },
+	"hidden": true,
+	"description": "here's a secret, this origin might eat rocks in the future :P"
+}
