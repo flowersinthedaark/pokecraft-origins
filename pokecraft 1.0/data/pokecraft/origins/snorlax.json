@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"pokecraft:snorlax/insatiableappetite",
+		"pokecraft:snorlax/immunity",
+		"pokecraft:snorlax/bodyslam",
+		"pokecraft:snorlax/hulking",
+		"pokecraft:snorlax/slowww",
+		"pokecraft:snorlax/rest",
+		"pokecraft:snorlax/noinsomniac"
+	],
+	"icon": "minecraft:cyan_bed",
+	"order": 4,
+	"impact": 2,
+	"name": "Snorlax",
+	"description": "Snorlax, the sleeping Pokemon. It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep."
+}
