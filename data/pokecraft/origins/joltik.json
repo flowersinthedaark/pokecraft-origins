@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"pokecraft:joltik/charge",
+		"pokecraft:joltik/electroweb",
+		"pokecraft:joltik/hopper",
+		"pokecraft:joltik/chargemunch",
+		"pokecraft:joltik/arachnidsize",
+		"pokecraft:joltik/fallproof",
+		"pokecraft:joltik/ride",
+		"pokecraft:joltik/staticdependent",
+		"pokecraft:joltik/struck",
+		"pokecraft:joltik/speed",
+		"pokecraft:joltik/webby",
+		"origins:arthropod"
+	],
+	"icon": "minecraft:lightning_rod",
+	"order": 2,
+	"impact": 3,
+	"name": "Joltik",
+	"description": "Joltik, the attaching Pokemon. Joltik can be found clinging to other Pokémon. It's soaking up static electricity because it can't produce a charge on its own."
+}
