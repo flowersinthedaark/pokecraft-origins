@@ -1,6 +1,0 @@
-{
-	"type": "origins:effect_immunity",
-	"effect": "minecraft:poison",
-	"name": "Double Immunity",
-	"description": "You're used to toxic fumes, they won't affect you."
-}
