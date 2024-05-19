@@ -1,0 +1,48 @@
+{
+	"type": "origins:multiple",
+	"timer": {
+		"type": "origins:resource",
+		"max": 3,
+		"min": 0,
+		"start_value": 3,
+		"min_action": {
+			"type": "origins:execute_command",
+			"command": "power revoke @s pokecraft:spinda/bopeffects pokecraft:spinda"
+		},
+		"hud_render": {
+			"should_render": false,
+			"bar_index": 3
+		}
+	},
+	"goindown": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "pokecraft:spinda/bopeffects_timer",
+			"change": -1
+		}
+	},
+	"confusion": {
+		"type": "origins:shader",
+		"shader": "minecraft:shaders/post/flip.json",
+		"toggleable": false,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "pokecraft:spinda/bopeffects_timer",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:origin",
+				"origin": "pokecraft:spinda",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"hidden": true
+}

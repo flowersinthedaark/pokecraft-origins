@@ -1,0 +1,6 @@
+{
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:poison",
+    "name": "Immunity",
+    "description": "Your strong stomach is immune to ailments from food such as spider eyes, and even a Muk's poison could not affect you."
+}

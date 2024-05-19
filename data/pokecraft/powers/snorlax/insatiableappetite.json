@@ -1,0 +1,791 @@
+{
+	"type": "origins:multiple",
+	"themunchies": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "bro you're snorlax",
+			"operation": "multiply_base",
+			"value": 1.0
+		}
+	},
+	"haybale": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:feed",
+						"food": 12,
+						"saturation": 0.4
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.generic.eat"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 10,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 20,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.burp"
+					}
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 30,
+						"amplifier": 0,
+						"show_icon": false,
+						"show_particles": false
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:hay_block"
+						}
+					}
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": "20"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"mushrooms": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:feed",
+						"food": 3,
+						"saturation": 0.2
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.generic.eat"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 10,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 20,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.burp"
+					}
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 30,
+						"amplifier": 0,
+						"show_icon": false,
+						"show_particles": false
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:brown_mushroom"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:red_mushroom"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:crimson_fungus"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:warped_fungus"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:nether_wart"
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": "20"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"mushblocks": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:feed",
+						"food": 8,
+						"saturation": 0.4
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.generic.eat"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 10,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 20,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.burp"
+					}
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 30,
+						"amplifier": 0,
+						"show_icon": false,
+						"show_particles": false
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:brown_mushroom_block"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:red_mushroom_block"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:mushroom_stem"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:nether_wart_block"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:warped_wart_block"
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": "20"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"driedkelp": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:feed",
+						"food": 7,
+						"saturation": 0.15
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.generic.eat"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 10,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 20,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.burp"
+					}
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 30,
+						"amplifier": 0,
+						"show_icon": false,
+						"show_particles": false
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:dried_kelp_block"
+						}
+					}
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": "20"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"cake": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:feed",
+						"food": 14,
+						"saturation": 0.1
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.generic.eat"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 10,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 20,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.burp"
+					}
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 30,
+						"amplifier": 0,
+						"show_icon": false,
+						"show_particles": false
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:cake"
+						}
+					}
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": "20"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"fermentedeye": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:feed",
+						"food": 4,
+						"saturation": 0.2
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.generic.eat"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 10,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 20,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.burp"
+					}
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 30,
+						"amplifier": 0,
+						"show_icon": false,
+						"show_particles": false
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:fermented_spider_eye"
+						}
+					}
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": "20"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"goldmelon": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:feed",
+						"food": 4,
+						"saturation": 0.3
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "mainhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.generic.eat"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 10,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 20,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.generic.eat"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 30,
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.burp"
+					}
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 30,
+						"amplifier": 0,
+						"show_icon": false,
+						"show_particles": false
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:glistering_melon_slice"
+						}
+					}
+				},
+				{
+					"type": "origins:food_level",
+					"comparison": "<",
+					"compare_to": "20"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"nohunger": {
+		"type": "origins:modify_food",
+		"prevent_effects": true,
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:rotten_flesh"
+			}
+		}
+	},
+	"edibleitems": {
+		"type": "origins:tooltip",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "pokecraft:snorlaxfoods"
+			}
+		},
+		"text": {
+			"text": "Edible",
+			"color": "dark_aqua"
+		}
+	},
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "Consume unusual foods marked with an §3Edible §ftooltip using %s"
+		}
+	],
+	"name": "Insatiable Appetite",
+	"description": "You are primarily meant for sleeping, so you will exhaust much faster, however you are not picky about what you eat, and can consume entire blocks worth of mushrooms, dried kelp, and more."
+}

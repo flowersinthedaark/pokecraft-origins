@@ -1,0 +1,17 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:darkness",
+        "minecraft:blindness",
+        "minecraft:nausea"
+    ],
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": "This includes confusion from Dizzy Punch"
+		}
+	],
+    "name": "Own Tempo",
+    "description": "You dance to the beat of your own drum. Visual effects will not confuse you."
+}

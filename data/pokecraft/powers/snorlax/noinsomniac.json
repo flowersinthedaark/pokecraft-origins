@@ -1,0 +1,142 @@
+{
+	"type": "origins:multiple",
+	"antiinsomnia": {
+		"type": "origins:resource",
+		"max": 3,
+		"min": 0,
+		"hud_render": {
+			"should_render": false,
+			"bar_index": 7
+		}
+	},
+	"tickset": {
+		"type": "origins:action_over_time",
+		"interval": 50,
+		"rising_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_antiinsomnia",
+			"change": 1
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:time_of_day",
+					"comparison": ">=",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:time_of_day",
+					"comparison": "<=",
+					"compare_to": 100
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_justslept",
+					"comparison": "==",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"allnighter": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "the consequences of your all-nighter",
+			"operation": "multiply_total",
+			"value": 0.2
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_antiinsomnia",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"48hours": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "now this is concerning, what are you a college student",
+			"operation": "multiply_total",
+			"value": 0.4
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_antiinsomnia",
+			"comparison": "==",
+			"compare_to": 2
+		}
+	},
+	"threewholedays": {
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "GO TO BED, Y O U CHOSE TO BE THE SLEEPIEST MF IN KANTO",
+			"operation": "multiply_total",
+			"value": 0.6
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_antiinsomnia",
+			"comparison": "==",
+			"compare_to": 3
+		}
+	},
+	"bedreset": {
+		"type": "origins:action_on_block_use",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "*:*_antiinsomnia",
+					"change": -3
+				},
+				{
+					"type": "origins:if_else",
+					"if_action": {
+						"type": "origins:trigger_cooldown",
+						"power": "*:*_justslept"
+					},
+					"condition": {
+						"type": "origins:resource",
+						"resource": "*:*_justslept",
+						"comparison": "==",
+						"compare_to": 0
+					},
+					"else_action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_justslept",
+						"change": 12542
+					}
+				}
+			]
+		},
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:beds"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:daytime",
+					"inverted": true
+				},
+				{
+					"type": "origins:dimension",
+					"dimension": "minecraft:overworld"
+				}
+			]
+		}
+	},
+	"justslept": {
+		"type": "origins:cooldown",
+		"cooldown": 12542,
+		"hud_render": {
+			"should_render": false,
+			"bar_index": 8
+		}
+	},
+	"name": "Rest",
+	"description": "You aren't meant to be awake all the time. Every time you sleep, you will recover half your health and hunger, however for every night you don't get at least a little rest, you will require more food to keep your stomach full."
+}
