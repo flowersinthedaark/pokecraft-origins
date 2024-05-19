@@ -1,0 +1,290 @@
+{
+	"type": "origins:multiple",
+	"snatched": {
+		"type": "origins:action_on_hit",
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:if_else_list",
+						"actions": [
+							{
+								"action": {
+									"type": "origins:apply_effect",
+									"effect": {
+										"effect": "minecraft:speed",
+										"amplifier": 0,
+										"show_particles": false,
+										"show_icon": true,
+										"duration": 100
+									}
+								},
+								"condition": {
+									"type": "origins:status_effect",
+									"effect": "minecraft:speed",
+									"inverted": true
+								}
+							},
+							{
+								"action": {
+									"type": "origins:apply_effect",
+									"effect": {
+										"effect": "minecraft:speed",
+										"amplifier": 1,
+										"show_particles": false,
+										"show_icon": true,
+										"duration": 100
+									}
+								},
+								"condition": {
+									"type": "origins:status_effect",
+									"effect": "minecraft:speed",
+									"min_amplifier": 0,
+									"max_amplifier": 0
+								}
+							},
+							{
+								"action": {
+									"type": "origins:apply_effect",
+									"effect": {
+										"effect": "minecraft:speed",
+										"amplifier": 2,
+										"show_particles": false,
+										"show_icon": true,
+										"duration": 100
+									}
+								},
+								"condition": {
+									"type": "origins:status_effect",
+									"effect": "minecraft:speed",
+									"min_amplifier": 1,
+									"max_amplifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:if_else_list",
+						"actions": [
+							{
+								"action": {
+									"type": "origins:and",
+									"actions": [
+										{
+											"type": "origins:apply_effect",
+											"effect": {
+												"effect": "minecraft:slowness",
+												"amplifier": 0,
+												"show_particles": false,
+												"show_icon": true,
+												"duration": 100
+											}
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:block.bubble_column.whirlpool_inside",
+											"category": "players",
+											"volume": 0.7
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:entity.zombie.attack_iron_door",
+											"category": "players",
+											"pitch": 1.71,
+											"volume": 0.5
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:block.barrel.close",
+											"category": "players",
+											"volume": 0.7
+										}
+									]
+								},
+								"condition": {
+									"type": "origins:status_effect",
+									"effect": "minecraft:slowness",
+									"inverted": true
+								}
+							},
+							{
+								"action": {
+									"type": "origins:and",
+									"actions": [
+										{
+											"type": "origins:apply_effect",
+											"effect": {
+												"effect": "minecraft:slowness",
+												"amplifier": 1,
+												"show_particles": false,
+												"show_icon": true,
+												"duration": 100
+											}
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:block.bubble_column.whirlpool_inside",
+											"category": "players",
+											"volume": 0.7
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:entity.zombie.attack_iron_door",
+											"category": "players",
+											"pitch": 1.71,
+											"volume": 0.6
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:block.barrel.close",
+											"category": "players",
+											"volume": 0.7
+										}
+									]
+								},
+								"condition": {
+									"type": "origins:status_effect",
+									"effect": "minecraft:slowness",
+									"min_amplifier": 0,
+									"max_amplifier": 0
+								}
+							},
+							{
+								"action": {
+									"type": "origins:and",
+									"actions": [
+										{
+											"type": "origins:apply_effect",
+											"effect": {
+												"effect": "minecraft:slowness",
+												"amplifier": 3,
+												"show_particles": false,
+												"show_icon": true,
+												"duration": 100
+											}
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:block.bubble_column.whirlpool_inside",
+											"category": "players",
+											"volume": 0.7
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:entity.zombie.attack_iron_door",
+											"category": "players",
+											"pitch": 1.71,
+											"volume": 0.6
+										},
+										{
+											"type": "origins:play_sound",
+											"sound": "minecraft:block.barrel.close",
+											"category": "players",
+											"volume": 0.7
+										}
+									]
+								},
+								"condition": {
+									"type": "origins:status_effect",
+									"effect": "minecraft:slowness",
+									"min_amplifier": 1,
+									"max_amplifier": 1
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		"bientity_condition": {
+			"type": "origins:actor_condition",
+			"condition": {
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:resource",
+						"resource": "*:*_snatchwindow",
+						"comparison": ">",
+						"compare_to": 0
+					}
+				]
+			}
+		},
+		"damage_condition": {
+			"type": "origins:projectile",
+			"inverted": true
+		}
+	},
+	"snatchwindow": {
+		"type": "origins:cooldown",
+		"cooldown": 60,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 8
+		}
+	},
+	"snatchcd": {
+		"type": "origins:cooldown",
+		"cooldown": 400,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 18
+		}
+	},
+	"triggersnatchcd": {
+		"type": "origins:action_over_time",
+		"rising_action": {
+			"type": "origins:trigger_cooldown",
+			"power": "*:*_snatchcd"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_snatchwindow",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"snatchtime": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:trigger_cooldown",
+			"power": "*:*_snatchwindow"
+		},
+		"key": {
+			"key": "key.origins.secondary_active"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "*:*_snatchwindow",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_snatchcd",
+					"comparison": "==",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "You have a small window to hit enemies once you press %s"
+		}
+	],
+	"name": "Spin Out",
+	"description": "Activate this ability to temporarily steal the speed of enemies you hit, stacking up to speed 3 for yourself."
+}

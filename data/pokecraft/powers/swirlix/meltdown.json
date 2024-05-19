@@ -1,0 +1,40 @@
+{
+	"type": "origins:exhaust",
+	"interval": 20,
+	"exhaustion": 1.0,
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+		{
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:on_fire"
+				},
+				{
+					"type": "origins:on_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:magma_block"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"condition": {
+						"type": "origins:temperature",
+						"comparison": ">=",
+						"compare_to": 2
+					}
+				}
+				]
+		},
+		{
+			"type": "origins:status_effect",
+			"effect": "minecraft:fire_resistance",
+			"inverted": true
+		}
+		]
+	},
+	"name": "Caramel",
+	"description": "Heat sources will melt your sugar, draining your hunger at especially concerning speeds."
+}

@@ -1,0 +1,26 @@
+{
+	"type": "origins:multiple",
+	"sugar_speed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.15
+		},
+		"tick_rate": 20,
+		"condition": {
+			"type": "origins:food_level",
+			"comparison": ">",
+			"compare_to": 6
+		}
+	},
+	"air_speed": {
+		"type": "origins:attribute_modify_transfer",
+		"class": "modify_air_speed",
+		"attribute": "minecraft:generic.movement_speed",
+		"multiplier": 1
+	},
+	"hidden": true,
+	"name": "sugar speed",
+	"description": "constant sugar high lmao"
+}

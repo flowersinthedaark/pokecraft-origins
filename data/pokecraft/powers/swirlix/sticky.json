@@ -1,0 +1,99 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:raycast",
+		"distance": 4.5,
+		"shape_type": "collider",
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:apply_effect",
+					"effects": [
+					{
+						"effect": "minecraft:slowness",
+						"amplifier": 8,
+						"duration": 40,
+						"show_particles": false,
+						"show_icon": false
+					},
+					{
+						"effect": "minecraft:slowness",
+						"amplifier": 8,
+						"duration": 70,
+						"show_icon": false,
+						"show_particles": false
+					}
+					]
+				}
+			},
+			{
+				"type": "origins:actor_action",
+				"action": {
+					"type": "origins:exhaust",
+					"amount": 1.5
+				}
+			},
+			{
+				"type": "origins:actor_action",
+				"action": {
+					"type": "origins:execute_command",
+					"command": "clear @s minecraft:sugar 1"
+					}
+			},
+			{
+				"type": "origins:actor_action",
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "minecraft:block.honey_block.place"
+				}
+			}
+			]
+		},
+		"command_along_ray": "particle white_ash ~ ~ ~ 0.2 0.0 0.3 0 2 normal",
+		"command_at_hit": "particle dust 1.0 1.0 1.0 1 ~ ~ ~ 0.2 0.0 0.3 0 2 normal"
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"cooldown": 100,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 0
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+		{
+			"type": "origins:or",
+			"conditions": [
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:sugar"
+					}
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "offhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:sugar"
+					}
+				}
+			}
+			]
+		}
+		]
+	},
+	"name": "Sugarspun",
+	"description": "You can entangle enemies with some extra sugar to stop them in their tracks, at the cost of a bit of hunger."
+}
