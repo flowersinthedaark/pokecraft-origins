@@ -1,0 +1,38 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:height 0.23 @s"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:width 0.23 @s"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:block_reach 0.8"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:entity_reach 0.78"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:jump_height 0.8"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale persist set true @s"
+		}
+		]
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scale reset @s"
+    },
+	"name": "Tiny",
+	"description": "You are incredibly small, making you immune to fall damage but reducing your reach."
+}

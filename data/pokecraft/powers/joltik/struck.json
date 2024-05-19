@@ -1,0 +1,47 @@
+{
+	"type": "origins:multiple",
+	"ultimatecharge": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "pokecraft:joltik/charge_chargebar",
+			"change": 150
+		},
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [
+			{
+				"type": "origins:name",
+				"name": "lightningBolt"
+			},
+			{
+				"type": "origins:name",
+				"name": "lightningBolt.player"
+			}
+			]
+		}
+	},
+	"lessdmg": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"name": "so it can be used in a pinch",
+			"operation": "multiply_base",
+			"value": -0.6
+		},
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [
+			{
+				"type": "origins:name",
+				"name": "lightningBolt"
+			},
+			{
+				"type": "origins:name",
+				"name": "lightningBolt.player"
+			}
+			]
+		}
+	},
+	"name": "Electric Type",
+	"description": "You take less damage from lightning."
+}

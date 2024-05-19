@@ -1,0 +1,33 @@
+{
+	"type": "origins:modify_exhaustion",
+	"modifier": {
+		"name": "only if active",
+		"operation": "multiply_base",
+		"value": 0.7
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+		{
+			"type": "origins:riding",
+			"inverted": true
+		},
+		{
+			"type": "origins:on_block",
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "pokecraft:joltikchargeblocks"
+			},
+			"inverted": true
+		},
+		{
+			"type": "origins:command",
+			"command": "execute if entity @a[distance=..2]",
+			"comparison": "!=",
+			"compare_to": 0
+		}
+		]
+	},
+	"name": "Hopper",
+	"description": "You do not naturally jump a full block, but you can use static to hop midair multiple times."
+}
