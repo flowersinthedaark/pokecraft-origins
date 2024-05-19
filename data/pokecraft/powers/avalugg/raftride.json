@@ -1,0 +1,54 @@
+{
+	"type": "origins:action_on_being_used",
+	"bientity_action": {
+		"type": "origins:mount"
+	},
+	"bientity_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:target_condition",
+						"condition": {
+							"type": "origins:fluid_height",
+							"fluid": "minecraft:water",
+							"comparison": ">",
+							"compare_to": 0
+						}
+					},
+					{
+						"type": "origins:target_condition",
+						"condition": {
+							"type": "origins:on_block",
+							"block_condition": {
+								"type": "origins:in_tag",
+								"tag": "pokecraft:avaluggcold"
+							}
+						}
+					}
+				]
+			},
+			{
+				"type": "origins:actor_condition",
+				"condition": {
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				}
+			}
+		]
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": "These movement modifiers always apply, not just when being ridden"
+		}
+	],
+	"name": "Glacier-Ride",
+	"description": "When touching water or ice, others can ride on you. You'll move especially fast keeping your head above water."
+}
