@@ -1,0 +1,129 @@
+{
+    "type": "origins:multiple",
+    "lhat": {
+        "type": "origins:action_over_time",
+		"interval": 60,
+        "entity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:equipped_item_action",
+				"equipment_slot": "head",
+				"action": {
+					"type": "origins:consume",
+					"amount": 1
+				}
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use"
+			}
+			]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "head",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:leather_helmet"
+                }
+            }
+        }
+    },
+	"lchest": {
+        "type": "origins:action_over_time",
+		"interval": 60,
+        "entity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:equipped_item_action",
+				"equipment_slot": "chest",
+				"action": {
+					"type": "origins:consume",
+					"amount": 1
+				}
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use"
+			}
+			]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "chest",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:leather_chestplate"
+                }
+            }
+        }
+    },
+	"lpants": {
+        "type": "origins:action_over_time",
+		"interval": 60,
+        "entity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:equipped_item_action",
+				"equipment_slot": "legs",
+				"action": {
+					"type": "origins:consume",
+					"amount": 1
+				}
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use"
+			}
+			]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "legs",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:leather_leggings"
+                }
+            }
+        }
+    },
+	"lshoes": {
+        "type": "origins:action_over_time",
+		"interval": 60,
+        "entity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:equipped_item_action",
+				"equipment_slot": "feet",
+				"action": {
+					"type": "origins:consume",
+					"amount": 1
+				}
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use"
+			}
+			]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "feet",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:leather_boots"
+                }
+            }
+        }
+    },
+	"name": "Flame Body",
+	"description": "Leather armor will burn up if you try to equip it."
+}

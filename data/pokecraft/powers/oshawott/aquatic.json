@@ -1,0 +1,263 @@
+{
+    "type": "origins:multiple",
+    "aquabar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 300,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 3,
+			"condition": {
+				"type": "origins:and",
+				"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+					{
+						"type": "origins:block_in_radius",
+						"radius": 5,
+						"shape": "cube",
+						"comparison": ">=",
+						"compare_to": 1,
+						"block_condition": {
+							"type": "origins:fluid",
+							"fluid_condition": {
+								"type": "origins:in_tag",
+								"tag": "minecraft:water"
+							}
+						}
+					},
+					{
+						"type": "origins:in_rain"
+					}
+					]
+				},
+				{
+					"type": "origins:resource",
+					"resource": "pokecraft:oshawott/aquatic_aquabar",
+					"comparison": ">",
+					"compare_to": 0
+				}
+				]
+			}
+        }
+    },
+    "weaklevel1": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name":  "weakness 1",
+            "operation": "addition",
+            "value": -1
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": ">",
+                    "compare_to": 5
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": "<=",
+                    "compare_to": 100
+                }
+            ]
+        }
+    },
+	"weaklevel2": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name":  "weakness 2",
+            "operation": "addition",
+            "value": -2
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": ">=",
+                    "compare_to": 101
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": "<=",
+                    "compare_to": 200
+                }
+            ]
+        }
+    },
+	"weaklevel3": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name":  "weakness 3",
+            "operation": "addition",
+            "value": -3
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": ">=",
+                    "compare_to": 201
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": "<=",
+                    "compare_to": 300
+                }
+            ]
+        }
+    },
+	"weakranged3": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"name": "range too",
+			"operation": "addition",
+			"value": -3
+		},
+		"condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": ">",
+                    "compare_to": 201
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": "<=",
+                    "compare_to": 300
+                }
+            ]
+        }
+	},
+	"weakranged2": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"name": "range too",
+			"operation": "addition",
+			"value": -2
+		},
+		"condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": ">",
+                    "compare_to": 101
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": "<=",
+                    "compare_to": 200
+                }
+            ]
+        }
+	},
+	"weakranged1": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"name": "range too",
+			"operation": "addition",
+			"value": -1
+		},
+		"condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": ">",
+                    "compare_to": 5
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "pokecraft:oshawott/aquatic_aquabar",
+                    "comparison": "<=",
+                    "compare_to": 100
+                }
+            ]
+        }
+	},
+	"decrease": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "pokecraft:oshawott/aquatic_aquabar",
+			"change": -2
+		},
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+			{
+				"type": "origins:block_in_radius",
+				"radius": 5,
+				"shape": "cube",
+				"comparison": ">=",
+				"compare_to": 1,
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:water"
+					}
+				}
+			},
+			{
+				"type": "origins:in_rain"
+			}
+			]
+		}
+	},
+	"increase": {
+		"type": "origins:action_over_time",
+		"interval": 80,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "pokecraft:oshawott/aquatic_aquabar",
+			"change": 4
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:block_in_radius",
+				"radius": 5,
+				"shape": "cube",
+				"comparison": ">=",
+				"compare_to": 1,
+				"block_condition": {
+					"type": "origins:fluid",
+					"fluid_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:water"
+					}
+				},
+				"inverted": true
+			},
+			{
+				"type": "origins:in_rain",
+				"inverted": true
+			}
+			]
+		}
+	},
+	"name": "Aquatic",
+	"description": "You can hold your breath longer underwater and swim faster, but you will become weaker the longer you are way from it."
+}

@@ -1,0 +1,51 @@
+{
+	"type": "origins:multiple",
+	"weaker_ranged": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"name": "range too",
+			"operation": "addition",
+			"value": -1
+		},
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:nbt",
+					"nbt": "{scalchop: 1b}"
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "offhand",
+				"item_condition": {
+					"type": "origins:nbt",
+					"nbt": "{scalchop: 1b}"
+				}
+			}
+		],
+		"inverted": true
+		}
+	},
+	"weaker": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name":  "weaker",
+            "operation": "addition",
+            "value": -1
+        },
+        "condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:nbt",
+				"nbt": "{scalchop: 1b}"
+			},
+			"inverted": true
+		}
+	},
+	"hidden": true
+}

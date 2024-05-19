@@ -1,0 +1,65 @@
+{
+	"type": "origins:multiple",
+	"breathresource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 5,
+		"start_value": 5,
+		"hud_render": {
+			"should_render": false,
+			"bar_index": 2
+		}
+	},
+	"breathdown": {
+		"type": "origins:action_over_time",
+		"interval": 30,
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:gain_air",
+				"value": 5
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "pokecraft:breathe_breathresource",
+				"change": -1
+			}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:submerged_in",
+				"fluid": "minecraft:water"
+			}
+			]
+		}
+	},
+	"breathup": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "pokecraft:breathe_breathresource",
+			"change": 5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:submerged_in",
+				"fluid": "minecraft:water",
+				"inverted": true
+			},
+			{
+				"type": "origins:air",
+				"comparison": ">=",
+				"compare_to": 300
+			}
+			]
+		}
+	},
+	"hidden": true
+}
