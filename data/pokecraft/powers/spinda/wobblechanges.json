@@ -10,7 +10,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 0
+                        "amount": 0
                     }
                 },
                 "weight": 1
@@ -21,7 +21,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 1
+                        "amount": 1
                     }
                 },
                 "weight": 1
@@ -32,7 +32,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 2
+                        "amount": 2
                     }
                 },
                 "weight": 1
@@ -43,7 +43,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 3
+                        "amount": 3
                     }
                 },
                 "weight": 1
@@ -54,7 +54,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 4
+                        "amount": 4
                     }
                 },
                 "weight": 1
@@ -65,7 +65,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 5
+                        "amount": 5
                     }
                 },
                 "weight": 1
@@ -76,7 +76,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 6
+                        "amount": 6
                     }
                 },
                 "weight": 1
@@ -87,7 +87,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 7
+                        "amount": 7
                     }
                 },
                 "weight": 1
@@ -98,7 +98,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 8
+                        "amount": 8
                     }
                 },
                 "weight": 1
@@ -109,7 +109,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 9
+                        "amount": 9
                     }
                 },
                 "weight": 1
@@ -120,7 +120,7 @@
                     "resource": "pokecraft:spinda/wobbly_possiblespeeds",
                     "modifier": {
                         "operation": "set_total",
-                        "value": 10
+                        "amount": 10
                     }
                 },
                 "weight": 1
@@ -129,4 +129,5 @@
     },
     "name": "Wobbly Pace",
     "description": "Your wobbly steps cause your speed to randomly change up."
+
 }
