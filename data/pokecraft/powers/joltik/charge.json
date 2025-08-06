@@ -35,13 +35,12 @@
 				{
 					"type": "origins:apply_effect",
 					"effect": {
-						"effect": "minecraft:speed",
+						"id": "minecraft:speed",
 						"amplifier": 0,
 						"duration": 21,
 						"show_icon": true,
 						"show_particles": false
 					}
-				},
 				{
 					"type": "origins:exhaust",
 					"amount": 0.1
@@ -117,16 +116,26 @@
 		}
 	},
 	"badges": [
-	{
-		"type": "origins:keybind",
-		"sprite": "origins:textures/gui/badge/toggle.png",
-		"text": "Toggle your charge bar's visibility with %s"
-	},
-	{
-		"type": "origins:tooltip",
-		"sprite": "origins:textures/gui/badge/info.png",
-		"text": "Riding players will drain their hunger slowly but give them speed"
-	}
+		{
+				"type": "origins:tooltip",
+				"sprite": "origins:textures/gui/badge/toggle.png",
+				"text": [
+					{
+						"text": "Toggle your charge bar's visibility with ["
+					},
+					{
+						"keybind": "key.origins.secondary_active"
+					},
+					{
+						"text": "]"
+					}
+				]
+			},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "Riding players will drain their hunger slowly but give them speed"
+		}
 	],
 	"togglebar": {
 		"type": "origins:toggle",
@@ -137,4 +146,5 @@
 	},
 	"name": "Static Electricity",
 	"description": "You can gain static by running across metal blocks, being around other entities, being struck by lightning, or riding on entities. You exhaust faster unless doing any of these."
+
 }
