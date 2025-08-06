@@ -70,9 +70,7 @@
 		"key": {
 			"key": "key.jump"
 		},
-        "entity_action": {
-			"type": "origins:and",
-			"actions": [
+        "entity_action": [
 			{
 				"type": "origins:change_resource",
 				"resource": "*:*_on_ground",
@@ -83,8 +81,7 @@
 				"resource": "pokecraft:joltik/charge_chargebar",
 				"change": -1
 			}
-			]
-        },
+		],
 		"condition":  {
 			"type": "origins:and",
 			"conditions": [
@@ -138,28 +135,25 @@
 
     "key": {
         "type": "origins:active_self",
-        "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "*:*_n",
-                        "comparison": "==",
-                        "compare_to": 0
-                    },
-                    "if_action": {
-                        "type": "origins:nothing"
-                    }
-                },
-                {
-                    "type": "origins:change_resource",
+        "entity_action": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
                     "resource": "*:*_n",
-                    "change": 2
-                }
-            ]
-        },
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:nothing"
+				}
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "*:*_n",
+                "change": 2
+            }
+        ],
         "cooldown": 1,
         "hud_render": {
             "should_render": false
