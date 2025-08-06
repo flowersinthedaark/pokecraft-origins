@@ -136,17 +136,28 @@
 		"compare_to": 150
 	},
 	"badges": [
-	{
-		"type": "origins:keybind",
-		"sprite": "origins:textures/gui/badge/active.png",
-		"text": "Web the area with %s"
-	},
-	{
-		"type": "origins:tooltip",
-		"sprite": "origins:textures/gui/badge/star.png",
-		"text": "You can move through web without issue"
-	}
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": [
+				{
+					"text": "Web the area with ["
+				},
+				{
+					"keybind": "key.origins.primary_active"
+				},
+				{
+					"text": "]"
+				}
+			]
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": "You can move through web without issue"
+		}
 	],
 	"name": "Electroweb",
 	"description": "Using static, you can web the area around you."
+
 }
