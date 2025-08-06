@@ -4,18 +4,18 @@
 		"type": "origins:attribute",
 		"modifier": {
 			"attribute": "minecraft:generic.max_health",
-			"name": "base health when not cracked",
-			"operation": "addition",
-			"value": 4
+			"id": "avalugg:uncracked_health",
+			"operation": "add_value",
+			"amount": 4
 		}
 	},
 	"uncrackedarmor": {
 		"type": "origins:attribute",
 		"modifier": {
 			"attribute": "minecraft:generic.armor",
-			"name": "base armor when not cracked",
-			"operation": "addition",
-			"value": 6
+			"id": "avalugg:uncracked_armor",
+			"operation": "add_value",
+			"amount": 6
 		}
 	},
 	"badges": [
@@ -28,4 +28,5 @@
 	"name": "Ice Body",
 	"description": "The ice that makes you up begins to crack under the sun unless you are in water or the biome is cold enough. Being within cold blocks or biomes will reduce your cracks and the blocks will even heal you if there are no cracks to fill."
 }
+
 	
