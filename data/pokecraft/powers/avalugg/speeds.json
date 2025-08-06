@@ -3,28 +3,26 @@
     "landspeed": {
 		"type": "origins:attribute",
 		"modifier": {
-			"name": "big slow guy",
+			"id": "avalugg:big_slow_guy",
 			"attribute": "minecraft:generic.movement_speed",
-			"operation": "multiply_base",
-			"value": -0.1
+			"operation": "add_multiplied_base",
+			"amount": -0.1
 		}
     },
     "waterspeed": {
-        "type": "origins:attribute",
-        "modifier": {
-            "name": "become the boat",
-            "attribute": "additionalentityattributes:water_speed",
-            "operation": "multiply_base",
-            "value": 1.0
-        }
+        "type": "origins:modify_swim_speed",
+		"modifier": {
+			"id": "avalugg:swim_speed",
+			"operation": "add_multiplied_base",
+			"amount": 1.0
+		}
     },
 	"likewatersprint": {
-		"type": "origins:conditioned_attribute",
+		"type": "origins:modify_swim_speed",
 		"modifier": {
-			"name": "become the boat 2",
-            "attribute": "additionalentityattributes:water_speed",
-            "operation": "multiply_base",
-            "value": 1.5
+			"id": "avalugg:swim_sprint",
+			"operation": "add_multiplied_base",
+			"amount": 1.7
 		},
 		"condition": {
 			"type": "origins:and",
