@@ -9,9 +9,12 @@
 		"pokecraft:swirlix/meltdown",
 		"pokecraft:swirlix/smol"
 	],
-	"icon": "minecraft:sugar",
+	"icon": {
+		"id": "minecraft:sugar"
+	},
 	"order": 2,
 	"impact": 1,
 	"name": "Swirlix",
 	"description": "Swirlix, the cotton candy Pokemon. It eats its own weight in sugar every day. If it doesn't get enough sugar, it becomes incredibly grumpy."
 }
+
