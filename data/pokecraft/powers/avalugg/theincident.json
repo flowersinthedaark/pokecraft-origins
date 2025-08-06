@@ -4,7 +4,7 @@
 		"type": "origins:actor_action",
 		"action": {
 			"type": "origins:execute_command",
-			"command": "title @s actionbar {\"text\": \"Boats and the iceberg Pokemon do not mix\", \"color\": \"white\"}"
+			"command": "title @s actionbar [\"\",{\"text\":\"Boats and the iceberg Pokemon do not mix\",\"color\":\"white\"}]"
 		}
 	},
 	"bientity_condition": {
@@ -16,4 +16,5 @@
 	},
 	"name": "Old Wounds",
 	"description": "Icebergs cannot use boats. They know what they did."
+
 }
