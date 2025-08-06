@@ -14,9 +14,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": -0.3,
-            "name": "speed 0"
+            "operation": "add_multiplied_base",
+            "amount": -0.3,
+            "id": "spinda:speed_0"
         },
         "tick_rate": 20,
         "condition": {
@@ -30,9 +30,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": -0.24,
-            "name": "speed 1"
+            "operation": "add_multiplied_base",
+            "amount": -0.24,
+            "id": "spinda:speed_1"
         },
         "tick_rate": 20,
         "condition": {
@@ -46,9 +46,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": -0.18,
-            "name": "speed 2"
+            "operation": "add_multiplied_base",
+            "amount": -0.18,
+            "id": "spinda:speed_2"
         },
         "tick_rate": 20,
         "condition": {
@@ -62,9 +62,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": -0.12,
-            "name": "speed 3"
+            "operation": "add_multiplied_base",
+            "amount": -0.12,
+            "id": "spinda:speed_3"
         },
         "tick_rate": 20,
         "condition": {
@@ -78,9 +78,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": -0.06,
-            "name": "speed 4"
+            "operation": "add_multiplied_base",
+            "amount": -0.06,
+            "id": "spinda:speed_4"
         },
         "tick_rate": 20,
         "condition": {
@@ -94,9 +94,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": 0.0,
-            "name": "speed 5, aka default player"
+            "operation": "add_multiplied_base",
+            "amount": 0.0,
+            "id": "spinda:speed_5-aka-default-player"
         },
         "tick_rate": 20,
         "condition": {
@@ -110,9 +110,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": 0.06,
-            "name": "speed 6"
+            "operation": "add_multiplied_base",
+            "amount": 0.06,
+            "id": "spinda:speed_6"
         },
         "tick_rate": 20,
         "condition": {
@@ -126,9 +126,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": 0.12,
-            "name": "speed 7"
+            "operation": "add_multiplied_base",
+            "amount": 0.12,
+            "id": "spinda:speed_7"
         },
         "tick_rate": 20,
         "condition": {
@@ -142,9 +142,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": 0.18,
-            "name": "speed 8"
+            "operation": "add_multiplied_base",
+            "amount": 0.18,
+            "id": "spinda:speed_8"
         },
         "tick_rate": 20,
         "condition": {
@@ -158,9 +158,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": 0.24,
-            "name": "speed 9"
+            "operation": "add_multiplied_base",
+            "amount": 0.24,
+            "id": "spinda:speed_9"
         },
         "tick_rate": 20,
         "condition": {
@@ -174,9 +174,9 @@
         "type": "origins:conditioned_attribute",
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": 0.3,
-            "name": "speed 10"
+            "operation": "add_multiplied_base",
+            "amount": 0.3,
+            "id": "spinda:speed_10"
         },
         "tick_rate": 20,
         "condition": {
