@@ -9,10 +9,11 @@
             },
             {
                 "type": "origins:feed",
-                "food": 10,
+                "nutrition": 10,
                 "saturation": 0.5
             }
         ]
     },
 	"hidden": true
+
 }
