@@ -8,20 +8,20 @@
 			{
 				"type": "origins:apply_effect",
 				"effects": [
-				{
-					"effect": "minecraft:levitation",
-					"amplifier": 1,
-					"duration": 7,
-					"show_icon": false,
-					"show_particles": false
-				},
-				{
-					"effect": "minecraft:slow_falling",
-					"amplifier": 1,
-					"duration": 20,
-					"show_icon": false,
-					"show_particles": false
-				}
+					{
+						"id": "minecraft:levitation",
+						"amplifier": 1,
+						"duration": 7,
+						"show_icon": false,
+						"show_particles": false
+					},
+					{
+						"id": "minecraft:slow_falling",
+						"amplifier": 1,
+						"duration": 20,
+						"show_icon": false,
+						"show_particles": false
+					}
 				]
 			},
 			{
@@ -121,17 +121,23 @@
 		}
 	},
 	"badges": [
-	{
-		"type": "origins:keybind",
-		"sprite": "origins:textures/gui/badge/active.png",
-		"text": "Float upward with %s"
-	},
-	{
-		"type": "origins:keybind",
-		"sprite": "origins:textures/gui/badge/toggle.png",
-		"text": "Toggle your floating on and off with your secondary"
-	}
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/toggle.png",
+			"text": [
+				{
+					"text": "Toggle the ability to float with ["
+				},
+				{
+					"keybind": "key.origins.secondary_active"
+				},
+				{
+					"text": "]"
+				}
+			]
+		}
 	],
 	"name": "Cotton Candy Body",
 	"description": "Your light fluffy body is able to move faster and periodically float around."
+
 }
