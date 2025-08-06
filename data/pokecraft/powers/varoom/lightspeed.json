@@ -26,10 +26,10 @@
 	"lightweight1": {
 		"type": "origins:attribute",
 		"modifier": {
-			"name": "easy to knock around",
+			"id": "varoom:knock_around",
 			"attribute": "minecraft:generic.knockback_resistance",
-			"operation": "multiply_base",
-			"value": -0.6
+			"operation": "add_multiplied_base",
+			"amount": -0.6
 		},
 		"condition": {
 			"type": "origins:attribute",
@@ -61,4 +61,5 @@
 	],
 	"name": "Lightweight",
 	"description": "You are slightly smaller and move faster, but to maintain your high speeds you are extremely lightweight, You cannot wear armor heavier than iron, and you take increased knockback."
+
 }
