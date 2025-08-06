@@ -1,11 +1,12 @@
 {
 	"type": "origins:multiple",
 	"healthywood": {
-		"type": "origins:modify_attribute",
-		"attribute": "minecraft:generic.max_health",
+		"type": "origins:conditioned_attribute",
 		"modifier": {
-			"operation": "addition",
-			"value": -4
+			"id": "bidoof:healthywood",
+			"attribute": "minecraft:generic.max_health",
+			"operation": "add_value",
+			"amount": -4
 		},
 		"condition": {
 			"inverted": true,
@@ -15,82 +16,18 @@
 			"comparison": ">=",
 			"compare_to": 1,
 			"block_condition": {
-				  "type": "origins:or",
-				  "conditions": [
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:logs"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:planks"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_doors"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_trapdoors"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_fences"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_pressure_plates"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:dead_bush"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:campfire"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:soul_campfire"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:azalea"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:flowering_azalea"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:torch"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:soul_torch"
-				},
-				{
-					  "type": "origins:block",
-					  "block": "minecraft:composter"
-				},
-				{
-					  "type": "origins:block",
-					  "block": "minecraft:crafting_table"
-				},
-				{
-					  "type": "origins:block",
-					  "block": "minecraft:chest"
-				}
-			]
+				"type": "origins:in_tag",
+				"tag": "pokecraft:bidoofwood"
 			}
 		}
 	},
 	"speedywood": {
-		"type": "origins:modify_attribute",
-		"attribute": "minecraft:generic.movement_speed",
+		"type": "origins:conditioned_attribute",
 		"modifier": {
-			"operation": "multiply_base",
-			"value": -0.1
+			"id": "bidoof:speedywood",
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "add_multiplied_base",
+			"amount": -0.1
 		},
 		"condition": {
 			"inverted": true,
@@ -100,73 +37,8 @@
 			"comparison": ">=",
 			"compare_to": 1,
 			"block_condition": {
-				  "type": "origins:or",
-				  "conditions": [
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:logs"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:planks"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_doors"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_trapdoors"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_fences"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:wooden_pressure_plates"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:dead_bush"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:campfire"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:soul_campfire"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:azalea"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:flowering_azalea"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:torch"
-				},
-				{
-					"type": "origins:block",
-					"block": "minecraft:soul_torch"
-				},
-				{
-					  "type": "origins:block",
-					  "block": "minecraft:crafting_table"
-				},
-				{
-					  "type": "origins:block",
-					  "block": "minecraft:composter"
-				},
-				{
-					  "type": "origins:block",
-					  "block": "minecraft:chest"
-				}
-			]
+				"type": "origins:in_tag",
+				"tag": "pokecraft:bidoofwood"
 			}
 		}
 	},
