@@ -1,7 +1,7 @@
 {
 	"replace": false,
-    "values": [
+	"values": [
         "#minecraft:snow",
-		"#minecraft:ice"
+	"#minecraft:ice"
     ]
 }
