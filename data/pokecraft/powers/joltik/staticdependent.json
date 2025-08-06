@@ -3,10 +3,10 @@
 	"health4": {
 		"type": "origins:conditioned_attribute",
 		"modifier": {
-			"name": "lowest health",
+			"id": "joltik:lowest_health",
 			"attribute": "minecraft:generic.max_health",
-			"value": -8.0,
-			"operation": "addition"
+			"amount": -8.0,
+			"operation": "add_value"
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -18,10 +18,10 @@
 	"health5": {
 		"type": "origins:conditioned_attribute",
 		"modifier": {
-			"name": "+1",
+			"id": "joltik:add_1",
 			"attribute": "minecraft:generic.max_health",
-			"value": -6.0,
-			"operation": "addition"
+			"amount": -6.0,
+			"operation": "add_value"
 		},
 		"condition": {
 			"type": "origins:and",
@@ -44,10 +44,10 @@
 	"health6": {
 		"type": "origins:conditioned_attribute",
 		"modifier": {
-			"name": "+2",
+			"id": "joltik:add_2",
 			"attribute": "minecraft:generic.max_health",
-			"value": -4.0,
-			"operation": "addition"
+			"amount": -4.0,
+			"operation": "add_value"
 		},
 		"condition": {
 			"type": "origins:and",
@@ -70,10 +70,10 @@
 	"health7": {
 		"type": "origins:conditioned_attribute",
 		"modifier": {
-			"name": "+3",
+			"id": "joltik:add_3",
 			"attribute": "minecraft:generic.max_health",
-			"value": -2.0,
-			"operation": "addition"
+			"amount": -2.0,
+			"operation": "add_value"
 		},
 		"condition": {
 			"type": "origins:and",
@@ -96,10 +96,10 @@
 	"health8": {
 		"type": "origins:attribute",
 		"modifier": {
-			"name": "thematic convenience",
+			"id": "joltik:thematic_convenience",
 			"attribute": "minecraft:generic.max_health",
-			"value": -4,
-			"operation": "addition"
+			"amount": -4,
+			"operation": "add_value"
 		}
 	},
 	"name": "Static-Dependent",
