@@ -4,11 +4,11 @@
 		"type": "origins:action_on_callback",
 		"entity_action_chosen": {
 			"type": "origins:execute_command",
-			"command": "power grant @s origins:master_of_webs_no_slowdown"
+			"command": "power grant @s origins:master_of_webs_no_slowdown joltik:webmaster"
 		},
 		"entity_action_lost": {
 			"type": "origins:execute_command",
-			"command": "power revoke @s origins:master_of_webs_no_slowdown"
+			"command": "power revoke @s origins:master_of_webs_no_slowdown joltik:webmaster"
 		}
 	},
 	"cobwebclimb": {
@@ -33,4 +33,5 @@
 		}
 	},
 	"hidden": true
+
 }
