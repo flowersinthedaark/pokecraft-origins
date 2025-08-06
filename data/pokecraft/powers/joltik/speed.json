@@ -4,9 +4,9 @@
 		"type": "origins:conditioned_attribute",
 		"modifier": {
 			"attribute": "minecraft:generic.movement_speed",
-			"name": "slowed down at 150",
-			"operation": "multiply_base",
-			"value": -0.15
+			"id": "joltik:slowed_down_at_150",
+			"operation": "add_multiplied_base",
+			"amount": -0.15
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -19,9 +19,9 @@
 		"type": "origins:conditioned_attribute",
 		"modifier": {
 			"attribute": "minecraft:generic.movement_speed",
-			"name": "slowed down at 150",
-			"operation": "multiply_base",
-			"value": -0.1
+			"id": "joltik:slowed_at_150",
+			"operation": "add_multiplied_base",
+			"amount": -0.1
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -34,9 +34,9 @@
 		"type": "origins:conditioned_attribute",
 		"modifier": {
 			"attribute": "minecraft:generic.movement_speed",
-			"name": "slowed down at 150",
-			"operation": "multiply_base",
-			"value": 0.05
+			"id": "joltik:slowed_at_300",
+			"operation": "add_multiplied_base",
+			"amount": 0.05
 		},
 		"condition": {
 			"type": "origins:and",
@@ -60,9 +60,9 @@
 		"type": "origins:conditioned_attribute",
 		"modifier": {
 			"attribute": "minecraft:generic.movement_speed",
-			"name": "slowed down at 150",
-			"operation": "multiply_base",
-			"value": 0.1
+			"id": "joltik:slowed_down_at_300",
+			"operation": "add_multiplied_base",
+			"amount": 0.1
 		},
 		"condition": {
 			"type": "origins:and",
