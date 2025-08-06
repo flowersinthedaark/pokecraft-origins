@@ -43,8 +43,8 @@
 		"type": "origins:modify_exhaustion",
 		"modifier": {
 			"name": "the consequences of your all-nighter",
-			"operation": "multiply_total",
-			"value": 0.2
+			"operation": "multiply_total_multiplicative",
+			"amount": 0.2
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -56,9 +56,9 @@
 	"48hours": {
 		"type": "origins:modify_exhaustion",
 		"modifier": {
-			"name": "now this is concerning, what are you a college student",
-			"operation": "multiply_total",
-			"value": 0.4
+			"name": "now this is concerning, what are you, a college student",
+			"operation": "multiply_total_multiplicative",
+			"amount": 0.4
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -70,9 +70,9 @@
 	"threewholedays": {
 		"type": "origins:modify_exhaustion",
 		"modifier": {
-			"name": "GO TO BED, Y O U CHOSE TO BE THE SLEEPIEST MF IN KANTO",
-			"operation": "multiply_total",
-			"value": 0.6
+			"name": "GO TO BED, Y O U CHOSE TO BE THE SLEEPIEST MF IN ALL OF KANTO",
+			"operation": "multiply_total_multiplicative",
+			"amount": 0.6
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -139,4 +139,5 @@
 	},
 	"name": "Rest",
 	"description": "You aren't meant to be awake all the time. Every time you sleep, you will recover half your health and hunger, however for every night you don't get at least a little rest, you will require more food to keep your stomach full."
+
 }
