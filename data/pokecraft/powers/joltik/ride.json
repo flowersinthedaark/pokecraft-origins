@@ -3,16 +3,11 @@
     "bientity_action": {
         "type": "origins:mount"
     },
-    "bientity_condition": {
-        "type": "origins:and",
-        "conditions": [
-            {
-                "type": "origins:target_condition",
-                "condition": {
-                    "type": "origins:living"
-                }
-            }
-        ]
+   "bientity_condition": {
+        "type": "origins:target_condition",
+        "condition": {
+            "type": "origins:living"
+        }
     },
     "item_condition": {
         "type": "origins:empty"
@@ -25,4 +20,5 @@
         "inverted": true
     },
 	"hidden": true
+
 }
