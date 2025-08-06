@@ -3,9 +3,10 @@
 	"sugar_speed": {
 		"type": "origins:conditioned_attribute",
 		"modifier": {
+			"id": "swirlix:sugar_speed",
 			"attribute": "minecraft:generic.movement_speed",
-			"operation": "multiply_base",
-			"value": 0.15
+			"operation": "add_multiplied_base",
+			"amount": 0.15
 		},
 		"tick_rate": 20,
 		"condition": {
@@ -23,4 +24,5 @@
 	"hidden": true,
 	"name": "sugar speed",
 	"description": "constant sugar high lmao"
+
 }
