@@ -1,42 +1,72 @@
 {
-	"type": "origins:active_self",
+	"type": "origins:action_on_key_press",
 	"entity_action": {
 		"type": "origins:raycast",
-		"distance": 3,
+		"distance": 4.5,
 		"block": true,
 		"entity": true,
 		"fluid_handling": "none",
 		"shape_type": "visual",
 		"bientity_action": {
-			"type": "origins:target_action",
-			"action": {
-				"type": "origins:damage",
-				"amount": 4,
-				"source": {
-					"name": "player"
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:damage",
+						"damage_type": "minecraft:player_attack",
+						"amount": 6
+					}
+				},
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.player.attack.sweep",
+						"pitch": 1.5
+					}
+				},
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:play_sound",
+						"sound": "minecraft:block.bubble_column.upwards_inside",
+						"pitch": 1.41
+					}
 				}
-			}
+			]
 		},
 		"command_at_hit": "particle minecraft:bubble_pop ~ ~ ~ 0.3 0.3 0.3 0 5 normal"
 	},
 	"condition": {
-		"type": "origins:and",
+		"type": "origins:or",
 		"conditions": [
-		{
-			"type": "origins:equipped_item",
-			"equipment_slot": "mainhand",
-			"item_condition": {
-				"type": "origins:nbt",
-				"nbt": "{scalchop: 1b}"
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:custom_data",
+					"nbt": "{scalchop: 1b}"
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "offhand",
+				"item_condition": {
+					"type": "origins:custom_data",
+					"nbt": "{scalchop: 1b}"
+				}
 			}
-		}
 		]
 	},
 	"cooldown": 140,
 	"hud_render": {
 		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-		"bar_index": 10
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 16
+	},
+	"key": {
+		"key": "key.origins.primary_active"
 	},
 	"name": "Razor Shell",
 	"description": "Slash at opponents with your §bScalchop."
