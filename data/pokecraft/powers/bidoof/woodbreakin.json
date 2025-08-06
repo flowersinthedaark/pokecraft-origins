@@ -4,8 +4,8 @@
 		"type": "origins:modify_break_speed",
 		"modifier": {
 			"name": "teeth",
-			"operation": "multiply_base",
-			"value": 0.6
+			"operation": "multiply_base_multiplicative",
+			"amount": 0.6
 		},
 		"block_condition": {
 			"type": "origins:in_tag",
@@ -16,8 +16,8 @@
 		"type": "origins:modify_break_speed",
 		"modifier": {
 			"name": "teethish",
-			"operation": "multiply_base",
-			"value": 0.4
+			"operation": "multiply_base_multiplicative",
+			"amount": 0.4
 		},
 		"block_condition": {
 			"type": "origins:in_tag",
@@ -29,8 +29,8 @@
 		"type": "origins:modify_break_speed",
 		"modifier": {
 			"name": "air teeth hehe",
-			"operation": "multiply_base",
-			"value": 5.0
+			"operation": "multiply_base_multiplicative",
+			"amount": 5.0
 		},
 		"block_condition": {
 			"type": "origins:in_tag",
@@ -39,46 +39,46 @@
 		"condition": {
 			"type": "origins:or",
 			"conditions": [
-			{
-				"type": "origins:submerged_in",
-				"fluid": "minecraft:water"
-			},
-			{
-				"type": "origins:and",
-				"conditions": [
 				{
-					"type": "origins:on_block",
-					"inverted": true
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water"
 				},
 				{
-					"type": "origins:fluid_height",
-					"fluid": "minecraft:water",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:on_block",
+							"inverted": true
+						},
+						{
+							"type": "origins:fluid_height",
+							"fluid": "minecraft:water",
+							"comparison": "==",
+							"compare_to": 0
+						},
+						{
+							"type": "origins:fluid_height",
+							"fluid": "minecraft:lava",
+							"comparison": "==",
+							"compare_to": 0
+						}
+					]
 				},
 				{
-					"type": "origins:fluid_height",
-					"fluid": "minecraft:lava",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:and",
+					"conditions": [
+					{
+						"type": "origins:on_block",
+						"inverted": true
+					},
+					{
+						"type": "origins:fluid_height",
+						"fluid": "minecraft:water",
+						"comparison": ">",
+						"compare_to": 0
+					}
+					]
 				}
-				]
-			},
-			{
-				"type": "origins:and",
-				"conditions": [
-				{
-					"type": "origins:on_block",
-					"inverted": true
-				},
-				{
-					"type": "origins:fluid_height",
-					"fluid": "minecraft:water",
-					"comparison": ">",
-					"compare_to": 0
-				}
-				]
-			}
 			]
 		}
 	},
@@ -86,8 +86,8 @@
 		"type": "origins:modify_break_speed",
 		"modifier": {
 			"name": "air teeth hehe",
-			"operation": "multiply_total",
-			"value": 5.0
+			"operation": "multiply_total_multiplicative",
+			"amount": 5.0
 		},
 		"block_condition": {
 			"type": "origins:in_tag",
