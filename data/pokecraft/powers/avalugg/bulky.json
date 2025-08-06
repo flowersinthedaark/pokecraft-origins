@@ -15,14 +15,9 @@
 		"type": "origins:action_over_time",
 		"interval": 20,
 		"entity_action": {
-			"type": "origins:and",
-			"actions": [
-			{
 			"type": "origins:change_resource",
 			"resource": "*:*_cracks",
 			"change": -1
-			}
-			]
 		},
 		"condition": {
 			"type": "origins:and",
@@ -122,16 +117,13 @@
 	"repairs": {
 		"type": "origins:action_over_time",
 		"interval": 10,
-		"entity_action": {
-			"type": "origins:and",
-			"actions": [
+		"entity_action": [
 			{
-			"type": "origins:change_resource",
-			"resource": "*:*_cracks",
-			"change": 1
+				"type": "origins:change_resource",
+				"resource": "*:*_cracks",
+				"change": 1
 			}
-			]
-		},
+		],
 		"condition": {
 			"type": "origins:or",
 			"conditions": [
@@ -171,16 +163,7 @@
 				]
 			},
 			{
-				"type": "origins:and",
-				"conditions": [
-				{
-					"type": "origins:predicate",
-					"predicate": "pokecraft:weather/is_rainy"
-				},
-				{
-					"type": "origins:exposed_to_sky"
-				}
-				]
+				"type": "origins:in_snow"
 			},
 			{
 				"type": "origins:in_block",
@@ -224,8 +207,8 @@
 		"type": "origins:modify_attribute",
 		"attribute": "minecraft:generic.armor",
 		"modifier": {
-			"operation": "addition",
-			"value": -2
+			"operation": "add_base_early",
+			"amount": -2
 		},
 		"condition": {
 			"type": "origins:and",
@@ -249,8 +232,8 @@
 		"type": "origins:modify_attribute",
 		"attribute": "minecraft:generic.armor",
 		"modifier": {
-			"operation": "addition",
-			"value": -4
+			"operation": "add_base_early",
+			"amount": -4
 		},
 		"condition": {
 			"type": "origins:and",
@@ -274,8 +257,8 @@
 		"type": "origins:modify_attribute",
 		"attribute": "minecraft:generic.armor",
 		"modifier": {
-			"operation": "addition",
-			"value": -6
+			"operation": "add_base_early",
+			"amount": -6
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -288,8 +271,8 @@
 		"type": "origins:modify_attribute",
 		"attribute": "minecraft:generic.max_health",
 		"modifier": {
-			"operation": "addition",
-			"value": -2
+			"operation": "add_base_early",
+			"amount": -2
 		},
 		"condition": {
 			"type": "origins:and",
@@ -313,8 +296,8 @@
 		"type": "origins:modify_attribute",
 		"attribute": "minecraft:generic.max_health",
 		"modifier": {
-			"operation": "addition",
-			"value": -4
+			"operation": "add_base_early",
+			"amount": -4
 		},
 		"condition": {
 			"type": "origins:and",
@@ -338,8 +321,8 @@
 		"type": "origins:modify_attribute",
 		"attribute": "minecraft:generic.max_health",
 		"modifier": {
-			"operation": "addition",
-			"value": -6
+			"operation": "add_base_early",
+			"amount": -6
 		},
 		"condition": {
 			"type": "origins:and",
@@ -363,8 +346,8 @@
 		"type": "origins:modify_attribute",
 		"attribute": "minecraft:generic.max_health",
 		"modifier": {
-			"operation": "addition",
-			"value": -8
+			"operation": "add_base_early",
+			"amount": -8
 		},
 		"condition": {
 			"type": "origins:resource",
