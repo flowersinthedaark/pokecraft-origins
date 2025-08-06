@@ -28,19 +28,20 @@
 		"type": "origins:attribute",
 		"modifiers": [
 			{
-				"name": "block reach cuz ur tall",
-				"attribute": "reach-entity-attributes:reach",
-				"operation": "addition",
-				"value": 0.5
+				"id": "avalugg:tall_block_reach",
+				"attribute": "minecraft:player.block_interaction_range",
+				"operation": "add_value",
+				"amount": 0.5
 			},
 			{
-				"name": "attack reach cuz ur tall",
-				"attribute": "reach-entity-attributes:attack_range",
-				"operation": "addition",
-				"value": 0.5
+				"id": "avalugg:tall_attack_reach",
+				"attribute": "minecraft:player.entity_interaction_range",
+				"operation": "add_value",
+				"amount": 0.5
 			}
 		]
 	},
 	"name": "Titanic Proportions",
 	"description": "This particular iceberg is about 3 blocks tall. You have slightly increased reach to compensate for the extra height."
+
 }
