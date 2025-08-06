@@ -37,19 +37,20 @@
 		"type": "origins:attribute",
 		"modifiers": [
 			{
-				"name": "block reach cuz ur tall",
-				"attribute": "reach-entity-attributes:reach",
-				"operation": "addition",
-				"value": 0.6
+				"id": "snorlax:tall_block_reach",
+				"attribute": "minecraft:player.block_interaction_range",
+				"operation": "add_value",
+				"amount": 0.6
 			},
 			{
-				"name": "attack reach cuz ur tall",
-				"attribute": "reach-entity-attributes:attack_range",
-				"operation": "addition",
-				"value": 0.6
+				"id": "snorlax:tall_attack_reach",
+				"attribute": "minecraft:player.entity_interaction_range",
+				"operation": "add_value",
+				"amount": 0.6
 			}
 		]
 	},
 	"name": "Ginormous",
 	"description": "You are significantly larger at a full 3 blocks tall and notably slower, but your size allows you increased reach."
+
 }
