@@ -222,16 +222,26 @@
     }
   },
   "badges": [
-	{
-		"type": "origins:tooltip",
-		"sprite": "origins:textures/gui/badge/star.png",
-		"text": "Wood breaks at normal speed when you are underwater or in the air"
-	},
-	{
-		"type": "origins:keybind",
-		"sprite": "origins:textures/gui/badge/toggle.png",
-		"text": "Toggle climbing with %s"
-	}
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": "Wood breaks at normal speed when you are underwater or in the air"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/toggle.png",
+			"text": [
+				{
+					"text": "Toggle climbing with ["
+				},
+				{
+					"keybind": "key.origins.primary_active"
+				},
+				{
+					"text": "]"
+				}
+			]
+		}
 	],
 	"name": "Beaver Teeth",
 	"description": "You can climb on wood and break it much quicker with your strong teeth. Other blocks break a bit faster as well."
