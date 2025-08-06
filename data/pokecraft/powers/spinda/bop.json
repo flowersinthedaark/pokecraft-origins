@@ -15,7 +15,7 @@
 									"type": "origins:apply_effect",
 									"effect": {
 										"effect": "minecraft:darkness",
-										"duration": 30,
+										"duration": 100,
 										"show_particles": true,
 										"show_icon": false
 									}
@@ -27,7 +27,7 @@
 									"type": "origins:apply_effect",
 									"effect": {
 										"effect": "minecraft:blindness",
-										"duration": 30,
+										"duration": 100,
 										"show_particles": true,
 										"show_icon": false
 									}
@@ -39,7 +39,7 @@
 									"type": "origins:apply_effect",
 									"effect": {
 										"effect": "minecraft:nausea",
-										"duration": 30,
+										"duration": 100,
 										"show_particles": true,
 										"show_icon": false
 									}
@@ -84,4 +84,5 @@
 	},
 	"name": "Dizzy Punch",
 	"description": "You have a chance of confusing your opponent when hitting them."
+
 }
