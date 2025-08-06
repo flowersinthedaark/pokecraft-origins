@@ -31,6 +31,24 @@
 		"minecraft:damaged_anvil",
 		"minecraft:hopper",
 		"minecraft:lantern",
-		"minecraft:soul_lantern"
+		"minecraft:soul_lantern",
+		"minecraft:copper_bulb",
+		"minecraft:waxed_copper_bulb",
+		"minecraft:exposed_copper_bulb",
+		"minecraft:waxed_exposed_copper_bulb",
+		"minecraft:weathered_copper_bulb",
+		"minecraft:waxed_weathered_copper_bulb",
+		"minecraft:chiseled_copper",
+		"minecraft:waxed_chiseled_copper",
+		"minecraft:exposed_chiseled_copper",
+		"minecraft:waxed_exposed_chiseled_copper",
+		"minecraft:weathered_chiseled_copper",
+		"minecraft:waxed_weathered_chiseled_copper",
+		"minecraft:copper_grate",
+		"minecraft:waxed_copper_grate",
+		"minecraft:exposed_copper_grate",
+		"minecraft:waxed_exposed_copper_grate",
+		"minecraft:weathered_copper_grate",
+		"minecraft:waxed_weathered_copper_grate"
     ]
 }
