@@ -2,7 +2,7 @@
     "type": "origins:action_over_time",
 	"interval": 1200,
     "entity_action": {
-		"type": "origins:chance",
+		"type": "origins:random_chance",
 		"action": {
 			"type": "origins:and",
 			"actions": [
@@ -31,4 +31,5 @@
 		"chance": 0.3
 	},
 	"hidden": true
+
 }
