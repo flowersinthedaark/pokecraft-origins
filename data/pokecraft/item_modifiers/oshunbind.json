@@ -1,0 +1,9 @@
+{
+	"function": "minecraft:set_components",
+	"components": {
+		"!minecraft:custom_data": {
+			"scalchop":1
+		},
+		"!minecraft:unbreakable": {}
+	}
+}
