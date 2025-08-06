@@ -2,8 +2,8 @@
 	"type": "origins:modify_exhaustion",
 	"modifier": {
 		"name": "only if active",
-		"operation": "multiply_base",
-		"value": 0.7
+		"operation": "multiply_base_multiplicative",
+		"amount": 0.7
 	},
 	"condition": {
 		"type": "origins:and",
@@ -21,13 +21,22 @@
 			"inverted": true
 		},
 		{
-			"type": "origins:command",
-			"command": "execute if entity @a[distance=..2]",
-			"comparison": "!=",
-			"compare_to": 0
+			"type": "origins:entity_in_radius",
+			"shape": "cube",
+			"radius": 2,
+			"comparison": ">=",
+			"compare_to": 1,
+			"bientity_condition": {
+				"type": "origins:target_condition",
+				"condition": {
+					"type": "origins:living"
+				}
+			},
+			"inverted": true
 		}
 		]
 	},
 	"name": "Hopper",
 	"description": "You do not naturally jump a full block, but you can use static to hop midair multiple times."
+
 }
