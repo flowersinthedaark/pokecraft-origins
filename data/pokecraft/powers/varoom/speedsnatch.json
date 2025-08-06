@@ -14,11 +14,11 @@
 								"action": {
 									"type": "origins:apply_effect",
 									"effect": {
-										"effect": "minecraft:speed",
+										"id": "minecraft:speed",
 										"amplifier": 0,
 										"show_particles": false,
 										"show_icon": true,
-										"duration": 100
+										"duration": 200
 									}
 								},
 								"condition": {
@@ -31,11 +31,11 @@
 								"action": {
 									"type": "origins:apply_effect",
 									"effect": {
-										"effect": "minecraft:speed",
+										"id": "minecraft:speed",
 										"amplifier": 1,
 										"show_particles": false,
 										"show_icon": true,
-										"duration": 100
+										"duration": 200
 									}
 								},
 								"condition": {
@@ -49,11 +49,11 @@
 								"action": {
 									"type": "origins:apply_effect",
 									"effect": {
-										"effect": "minecraft:speed",
+										"id": "minecraft:speed",
 										"amplifier": 2,
 										"show_particles": false,
 										"show_icon": true,
-										"duration": 100
+										"duration": 200
 									}
 								},
 								"condition": {
@@ -78,11 +78,11 @@
 										{
 											"type": "origins:apply_effect",
 											"effect": {
-												"effect": "minecraft:slowness",
+												"id": "minecraft:slowness",
 												"amplifier": 0,
 												"show_particles": false,
 												"show_icon": true,
-												"duration": 100
+												"duration": 200
 											}
 										},
 										{
@@ -119,11 +119,11 @@
 										{
 											"type": "origins:apply_effect",
 											"effect": {
-												"effect": "minecraft:slowness",
+												"id": "minecraft:slowness",
 												"amplifier": 1,
 												"show_particles": false,
 												"show_icon": true,
-												"duration": 100
+												"duration": 200
 											}
 										},
 										{
@@ -161,11 +161,11 @@
 										{
 											"type": "origins:apply_effect",
 											"effect": {
-												"effect": "minecraft:slowness",
+												"id": "minecraft:slowness",
 												"amplifier": 3,
 												"show_particles": false,
 												"show_icon": true,
-												"duration": 100
+												"duration": 200
 											}
 										},
 										{
@@ -280,9 +280,19 @@
 	},
 	"badges": [
 		{
-			"type": "origins:keybind",
+			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/active.png",
-			"text": "You have a small window to hit enemies once you press %s"
+			"text": [
+				{
+					"text": "You have a small window to hit enemies once you press ["
+				},
+				{
+					"keybind": "key.origins.secondary_active"
+				},
+				{
+					"text": "]"
+				}
+			]
 		}
 	],
 	"name": "Spin Out",
