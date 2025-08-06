@@ -5,7 +5,7 @@
 		"pokecraft:avalugg/bulky",
 		"pokecraft:avalugg/uncrackedtempfix",
 		"pokecraft:avalugg/extracracks",
-		"pokecraft:avalugg/titanicproportions",
+		"pokecraft:avalugg/titanicproportionstempfix",
 		"pokecraft:avalugg/theincident",
 		"pokecraft:avalugg/speeds"
 	],
@@ -17,4 +17,5 @@
 	"name": "Avalugg",
 	"description": "Avalugg, the iceberg Pokémon. At high latitudes, this Pokémon can be found with clusters of Bergmite on its back as it swims among the icebergs."
 }
+
 
