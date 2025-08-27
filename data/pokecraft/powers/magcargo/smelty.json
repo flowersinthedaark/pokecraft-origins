@@ -28,7 +28,7 @@
 		}
 		]
 	},
-	"cooldown": 200,
+	"cooldown": 100,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
@@ -40,111 +40,51 @@
 	"condition": {
 		"type": "origins:and",
 		"conditions": [
-		{
-			"type": "origins:or",
-			"conditions": [
 			{
-				"type": "origins:and",
+				"type": "origins:or",
 				"conditions": [
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "mainhand",
-					"item_condition": {
-						"type": "origins:amount",
-						"comparison": "<=",
-						"compare_to": 4
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:and",
+							"conditions": [
+								{
+								"type": "origins:smeltable"
+								},
+								{
+									"type": "origins:amount",
+									"comparison": "<=",
+									"compare_to": 4
+								}
+							]
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "offhand",
+						"item_condition": {
+							"type": "origins:and",
+							"conditions": [
+								{
+								"type": "origins:smeltable"
+								},
+								{
+									"type": "origins:amount",
+									"comparison": "<=",
+									"compare_to": 4
+								}
+							]
+						}
 					}
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "mainhand",
-					"item_condition": {
-						"type": "origins:smeltable"
-					}
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "offhand",
-					"item_condition": {
-						"type": "origins:amount",
-						"comparison": "<=",
-						"compare_to": 4
-					}
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "offhand",
-					"item_condition": {
-						"type": "origins:smeltable"
-					}
-				}
 				]
 			},
 			{
-				"type": "origins:and",
-				"conditions": [
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "offhand",
-					"item_condition": {
-						"type": "origins:amount",
-						"comparison": "<=",
-						"compare_to": 4
-					}
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "offhand",
-					"item_condition": {
-						"type": "origins:smeltable"
-					}
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "mainhand",
-					"item_condition": {
-						"type": "origins:smeltable",
-						"inverted": true
-					}
-				}
-				]
-			},
-			{
-				"type": "origins:and",
-				"conditions": [
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "mainhand",
-					"item_condition": {
-						"type": "origins:amount",
-						"comparison": "<=",
-						"compare_to": 4
-					}
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "mainhand",
-					"item_condition": {
-						"type": "origins:smeltable"
-					}
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "offhand",
-					"item_condition": {
-						"type": "origins:smeltable",
-						"inverted": true
-					}
-				}
-				]
+				"type": "origins:on_fire"
 			}
-			]
-		},
-		{
-			"type": "origins:on_fire"
-		}
 		]
 	},
 	"name": "Smelt",
 	"description": "You can cook or smelt about four items in your hand at a time using the heat of fire."
+
 }
